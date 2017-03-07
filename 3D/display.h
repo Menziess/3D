@@ -3,6 +3,7 @@
 #include <SDL2\SDL.h>
 #undef main // undef SDL.h main
 #include <string>
+#include <GL\glew.h>
 
 class Display
 {
@@ -17,7 +18,7 @@ public:
 protected:
 private:
 	Display(const Display& other) {}
-	Display& operator=(const Display& other) {}
+	void operator=(const Display& other) {}
 
 	SDL_Window* m_window;
 	SDL_GLContext m_glContext;
