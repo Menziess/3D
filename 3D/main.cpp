@@ -15,7 +15,7 @@ int main()
 
 	Mesh mesh(vertices, sizeof(vertices) / sizeof(vertices[0]));
 	Shader shader("./res/basicShader");
-	Texture texture(".res/bricks.jpg");
+	Texture texture("./res/bricks.jpg");
 
 	while (!display.IsClosed())
 	{
