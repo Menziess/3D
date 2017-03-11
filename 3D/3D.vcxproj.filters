@@ -29,5 +29,6 @@
     <ClInclude Include="mesh.h" />
     <ClInclude Include="texture.h" />
     <ClInclude Include="stb_image.h" />
+    <ClInclude Include="transform.h" />
   </ItemGroup>
 </Project>
