@@ -24,7 +24,7 @@ int main()
 	Mesh mesh2("./res/monkey3.obj");
 	Shader shader("./res/basicShader");
 	Texture texture("./res/bricks.jpg");
-	Camera camera(glm::vec3(0, 0, -3), 80.0f, (float)WIDTH / (float)HEIGHT, 0.0f, 1000.0f);
+	Camera camera(glm::vec3(0, 0, -4), 80.0f, (float)WIDTH / (float)HEIGHT, 0.1f, 1000.0f);
 	Transform transform;
 
 	float counter = 0.0f;
@@ -37,13 +37,16 @@ int main()
 		float cosCounter = cosf(counter);
 
 		transform.GetPos().x = sinCounter;
-		transform.GetRot().z = counter * 50;
+		transform.GetPos().z = sinCounter;
+		transform.GetRot().x = counter * 50;
+		transform.GetRot().y = counter * 50;
 		transform.SetScale(glm::vec3(cosCounter, cosCounter, cosCounter));
 
 		shader.Bind();
 		texture.Bind(0);
 		shader.Update(transform, camera);
 		mesh2.Draw();
+		mesh.Draw();
 
 		display.Update();
 		counter += 0.00001f;
