@@ -30,5 +30,6 @@
     <ClInclude Include="texture.h" />
     <ClInclude Include="stb_image.h" />
     <ClInclude Include="transform.h" />
+    <ClInclude Include="Camera.h" />
   </ItemGroup>
 </Project>
