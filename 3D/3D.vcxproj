@@ -151,6 +151,7 @@
     <ClCompile Include="display.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mesh.cpp" />
+    <ClCompile Include="obj_loader.cpp" />
     <ClCompile Include="shader.cpp" />
     <ClCompile Include="texture.cpp" />
   </ItemGroup>
@@ -158,6 +159,7 @@
     <ClInclude Include="Camera.h" />
     <ClInclude Include="display.h" />
     <ClInclude Include="mesh.h" />
+    <ClInclude Include="obj_loader.h" />
     <ClInclude Include="shader.h" />
     <ClInclude Include="stb_image.h" />
     <ClInclude Include="texture.h" />

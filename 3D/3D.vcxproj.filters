@@ -22,6 +22,9 @@
     <ClCompile Include="texture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="obj_loader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="display.h" />
@@ -31,5 +34,6 @@
     <ClInclude Include="stb_image.h" />
     <ClInclude Include="transform.h" />
     <ClInclude Include="Camera.h" />
+    <ClInclude Include="obj_loader.h" />
   </ItemGroup>
 </Project>
